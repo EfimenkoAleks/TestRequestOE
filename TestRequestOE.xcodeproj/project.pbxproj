@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CE9768102DC4BCD50035E65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97680F2DC4BCD50035E65E /* AppDelegate.swift */; };
-		CE9768122DC4BCD50035E65E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768112DC4BCD50035E65E /* SceneDelegate.swift */; };
-		CE9768142DC4BCD50035E65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768132DC4BCD50035E65E /* ViewController.swift */; };
-		CE9768172DC4BCD50035E65E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9768152DC4BCD50035E65E /* Main.storyboard */; };
 		CE9768192DC4BCD80035E65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9768182DC4BCD80035E65E /* Assets.xcassets */; };
 		CE97681C2DC4BCD80035E65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE97681A2DC4BCD80035E65E /* LaunchScreen.storyboard */; };
+		CE9768252DC4C8CA0035E65E /* AplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768242DC4C8CA0035E65E /* AplicationCoordinator.swift */; };
+		CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768272DC4C93A0035E65E /* Coordinator.swift */; };
+		CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768292DC4C99D0035E65E /* TabCoordinator.swift */; };
+		CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */; };
+		CE97682F2DC4CA850035E65E /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97682E2DC4CA850035E65E /* Block.swift */; };
+		CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768322DC4CBEE0035E65E /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE97680C2DC4BCD50035E65E /* TestRequestOE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRequestOE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE97680F2DC4BCD50035E65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE9768112DC4BCD50035E65E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE9768132DC4BCD50035E65E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE9768162DC4BCD50035E65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9768182DC4BCD80035E65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE97681B2DC4BCD80035E65E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE97681D2DC4BCD80035E65E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9768242DC4C8CA0035E65E /* AplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AplicationCoordinator.swift; sourceTree = "<group>"; };
+		CE9768272DC4C93A0035E65E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CE9768292DC4C99D0035E65E /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCoordinator.swift; sourceTree = "<group>"; };
+		CE97682E2DC4CA850035E65E /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		CE9768322DC4CBEE0035E65E /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		CE97680E2DC4BCD50035E65E /* TestRequestOE */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768302DC4CBB70035E65E /* Controllers */,
+				CE97682D2DC4CA620035E65E /* Extension */,
+				CE9768232DC4C8B50035E65E /* Coordinator */,
 				CE97680F2DC4BCD50035E65E /* AppDelegate.swift */,
-				CE9768112DC4BCD50035E65E /* SceneDelegate.swift */,
-				CE9768132DC4BCD50035E65E /* ViewController.swift */,
-				CE9768152DC4BCD50035E65E /* Main.storyboard */,
 				CE9768182DC4BCD80035E65E /* Assets.xcassets */,
 				CE97681A2DC4BCD80035E65E /* LaunchScreen.storyboard */,
 				CE97681D2DC4BCD80035E65E /* Info.plist */,
 			);
 			path = TestRequestOE;
+			sourceTree = "<group>";
+		};
+		CE9768232DC4C8B50035E65E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768262DC4C9240035E65E /* CoordinatorProtocol */,
+				CE9768242DC4C8CA0035E65E /* AplicationCoordinator.swift */,
+				CE9768292DC4C99D0035E65E /* TabCoordinator.swift */,
+				CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CE9768262DC4C9240035E65E /* CoordinatorProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768272DC4C93A0035E65E /* Coordinator.swift */,
+			);
+			path = CoordinatorProtocol;
+			sourceTree = "<group>";
+		};
+		CE97682D2DC4CA620035E65E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE97682E2DC4CA850035E65E /* Block.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE9768302DC4CBB70035E65E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768312DC4CBC70035E65E /* TabController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE9768312DC4CBC70035E65E /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768322DC4CBEE0035E65E /* TabBarItem.swift */,
+			);
+			path = TabController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +176,6 @@
 			files = (
 				CE97681C2DC4BCD80035E65E /* LaunchScreen.storyboard in Resources */,
 				CE9768192DC4BCD80035E65E /* Assets.xcassets in Resources */,
-				CE9768172DC4BCD50035E65E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9768142DC4BCD50035E65E /* ViewController.swift in Sources */,
+				CE9768252DC4C8CA0035E65E /* AplicationCoordinator.swift in Sources */,
 				CE9768102DC4BCD50035E65E /* AppDelegate.swift in Sources */,
-				CE9768122DC4BCD50035E65E /* SceneDelegate.swift in Sources */,
+				CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */,
+				CE97682F2DC4CA850035E65E /* Block.swift in Sources */,
+				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
+				CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */,
+				CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE9768152DC4BCD50035E65E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9768162DC4BCD50035E65E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE97681A2DC4BCD80035E65E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +341,7 @@
 				INFOPLIST_FILE = TestRequestOE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +349,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Efimenko.TestRequestOE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,9 +371,7 @@
 				INFOPLIST_FILE = TestRequestOE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +379,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Efimenko.TestRequestOE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
