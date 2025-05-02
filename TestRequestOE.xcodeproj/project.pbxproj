@@ -16,6 +16,12 @@
 		CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */; };
 		CE97682F2DC4CA850035E65E /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97682E2DC4CA850035E65E /* Block.swift */; };
 		CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768322DC4CBEE0035E65E /* TabBarItem.swift */; };
+		CE9768392DC4E8850035E65E /* GetApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768382DC4E8850035E65E /* GetApiView.swift */; };
+		CE97683C2DC4E9F30035E65E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97683B2DC4E9F30035E65E /* Colors.swift */; };
+		CE97683F2DC4F1FF0035E65E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97683E2DC4F1FF0035E65E /* User.swift */; };
+		CE9768412DC4F3E50035E65E /* GetApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768402DC4F3E50035E65E /* GetApiViewModel.swift */; };
+		CE9768432DC507E50035E65E /* RegisteredUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768422DC507E50035E65E /* RegisteredUsersView.swift */; };
+		CE9768452DC508220035E65E /* UserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768442DC508220035E65E /* UserCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCoordinator.swift; sourceTree = "<group>"; };
 		CE97682E2DC4CA850035E65E /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		CE9768322DC4CBEE0035E65E /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		CE9768382DC4E8850035E65E /* GetApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiView.swift; sourceTree = "<group>"; };
+		CE97683B2DC4E9F30035E65E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CE97683E2DC4F1FF0035E65E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE9768402DC4F3E50035E65E /* GetApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetApiViewModel.swift; sourceTree = "<group>"; };
+		CE9768422DC507E50035E65E /* RegisteredUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredUsersView.swift; sourceTree = "<group>"; };
+		CE9768442DC508220035E65E /* UserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 		CE97680E2DC4BCD50035E65E /* TestRequestOE */ = {
 			isa = PBXGroup;
 			children = (
+				CE97683A2DC4E9C80035E65E /* Models */,
 				CE9768342DC4CF7D0035E65E /* Resources */,
 				CE9768302DC4CBB70035E65E /* Controllers */,
 				CE97682D2DC4CA620035E65E /* Extension */,
@@ -103,6 +116,7 @@
 		CE9768302DC4CBB70035E65E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768352DC4E81F0035E65E /* GetApiController */,
 				CE9768312DC4CBC70035E65E /* TabController */,
 			);
 			path = Controllers;
@@ -122,6 +136,50 @@
 				CE9768182DC4BCD80035E65E /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE9768352DC4E81F0035E65E /* GetApiController */ = {
+			isa = PBXGroup;
+			children = (
+				CE97683D2DC4F1E90035E65E /* Model */,
+				CE9768372DC4E8590035E65E /* ViewModel */,
+				CE9768362DC4E84F0035E65E /* View */,
+			);
+			path = GetApiController;
+			sourceTree = "<group>";
+		};
+		CE9768362DC4E84F0035E65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768382DC4E8850035E65E /* GetApiView.swift */,
+				CE9768422DC507E50035E65E /* RegisteredUsersView.swift */,
+				CE9768442DC508220035E65E /* UserCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9768372DC4E8590035E65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768402DC4F3E50035E65E /* GetApiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE97683A2DC4E9C80035E65E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE97683B2DC4E9F30035E65E /* Colors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE97683D2DC4F1E90035E65E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE97683E2DC4F1FF0035E65E /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,13 +252,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9768392DC4E8850035E65E /* GetApiView.swift in Sources */,
+				CE97683C2DC4E9F30035E65E /* Colors.swift in Sources */,
 				CE9768252DC4C8CA0035E65E /* AplicationCoordinator.swift in Sources */,
+				CE9768432DC507E50035E65E /* RegisteredUsersView.swift in Sources */,
 				CE9768102DC4BCD50035E65E /* AppDelegate.swift in Sources */,
 				CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */,
 				CE97682F2DC4CA850035E65E /* Block.swift in Sources */,
+				CE9768452DC508220035E65E /* UserCellView.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
 				CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */,
+				CE97683F2DC4F1FF0035E65E /* User.swift in Sources */,
 				CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */,
+				CE9768412DC4F3E50035E65E /* GetApiViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
