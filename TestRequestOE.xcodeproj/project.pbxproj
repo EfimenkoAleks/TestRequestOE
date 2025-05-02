@@ -62,11 +62,11 @@
 		CE97680E2DC4BCD50035E65E /* TestRequestOE */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768342DC4CF7D0035E65E /* Resources */,
 				CE9768302DC4CBB70035E65E /* Controllers */,
 				CE97682D2DC4CA620035E65E /* Extension */,
 				CE9768232DC4C8B50035E65E /* Coordinator */,
 				CE97680F2DC4BCD50035E65E /* AppDelegate.swift */,
-				CE9768182DC4BCD80035E65E /* Assets.xcassets */,
 				CE97681A2DC4BCD80035E65E /* LaunchScreen.storyboard */,
 				CE97681D2DC4BCD80035E65E /* Info.plist */,
 			);
@@ -114,6 +114,14 @@
 				CE9768322DC4CBEE0035E65E /* TabBarItem.swift */,
 			);
 			path = TabController;
+			sourceTree = "<group>";
+		};
+		CE9768342DC4CF7D0035E65E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768182DC4BCD80035E65E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
