@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A6D1897D-F4E7-44E0-AE7E-E7D3DA003D47"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BB04DDD-C183-4390-855A-F54876EC4CE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7BB04DDD-C183-4390-855A-F54876EC4CE4 - 6af45906c5143ecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "377">
+               </Location>
+               <Location
+                  uuid = "7BB04DDD-C183-4390-855A-F54876EC4CE4 - 5ac7c30b198379fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1942">
+               </Location>
+               <Location
+                  uuid = "7BB04DDD-C183-4390-855A-F54876EC4CE4 - 5ac7c30b198379fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1774">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90C7E681-9AF3-4B7F-A219-D012A95BEC55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F268508D-A5AD-497C-81BF-934D72E05BB0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Controllers/GetApiController/View/RegisteredUsersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A1238AA-1DEA-4BAE-8C10-1DF982FFC6AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init(networkService:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B9D55B7-AC78-4C04-9F0D-3F9911A39AC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchUsers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F6ABD1C-0009-47CA-A3B7-B3C81896BD46"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Coordinator/AplicationCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AF0C1B7-F3CC-4DBF-AF13-609240E6317E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Coordinator/AplicationCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81BCFC68-F92C-43ED-97E3-BB3667A5FB61"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "81BCFC68-F92C-43ED-97E3-BB3667A5FB61 - 6af45906c5143078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "2317">
+               </Location>
+               <Location
+                  uuid = "81BCFC68-F92C-43ED-97E3-BB3667A5FB61 - 6af45906c514305f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "2082">
+               </Location>
+               <Location
+                  uuid = "81BCFC68-F92C-43ED-97E3-BB3667A5FB61 - 6af45906c514305f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "2440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "828406DB-BBFC-40C7-81CE-1567CE307136"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "828406DB-BBFC-40C7-81CE-1567CE307136 - 6af45906c51433db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2440">
+               </Location>
+               <Location
+                  uuid = "828406DB-BBFC-40C7-81CE-1567CE307136 - 6af45906c5143399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "2947">
+               </Location>
+               <Location
+                  uuid = "828406DB-BBFC-40C7-81CE-1567CE307136 - 6af45906c5143399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "3555">
+               </Location>
+               <Location
+                  uuid = "828406DB-BBFC-40C7-81CE-1567CE307136 - 6af45906c5143399"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "3543">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c5143e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "418">
+               </Location>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c5143e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "906">
+               </Location>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c5143e69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "418">
+               </Location>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c5143e69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "906">
+               </Location>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c514318a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "418">
+               </Location>
+               <Location
+                  uuid = "92F2C120-887C-4DE4-8048-51CEA6AB0D14 - 6af45906c514318a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.fetchUsers(load: TestRequestOE.NetworkLoadEvent, completionHandler: (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "906">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C8DD75E-81BF-4E65-BC3B-0161A8D62754"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "fetchUsers(load:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -7,6 +7,21 @@
 
 import Foundation
 
+struct ResponseUser: Decodable {
+    var page: Int?
+    var total_pages: Int?
+    var total_users: Int?
+    var count: Int?
+    var links: ResponseUserLink?
+    var users: [User]?
+}
+
+struct ResponseUserLink: Decodable {
+    var next_url: String?
+    var prev_url: String?
+}
+
+
 struct User: Decodable {
     var id: Int?
     var name: String?

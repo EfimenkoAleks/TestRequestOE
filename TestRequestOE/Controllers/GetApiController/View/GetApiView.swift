@@ -11,25 +11,24 @@ struct GetApiView: View {
     
     @ObservedObject var collectVM : GetApiViewModel
     private let titleText: String = "Working with GET request"
+    var typeHandler: Block<(TabBarItem)>?
     
     var body: some View {
-        ZStack {
+        VStack {
+            ZStack {
+                Color(T_Color.yellowColor.color)
+                Text(titleText)
+            }
+            .frame(height: 56)
             ScrollView {
                 LazyVStack(spacing: 30) {
-                    ZStack {
-                        Color(T_Color.yellowColor.color)
-                        Text(titleText)
-                    }
                     RegisteredUsersView(collectVM: collectVM)
                }
             }
-            .padding()
-            .background(.black)
-     
+            .background(T_Color.white.color)
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
-    
     }
 }
 

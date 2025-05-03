@@ -25,6 +25,13 @@ final class TabCoordinator: Coordinator {
     
     func start() {
 
+        let vModel = GetApiViewModel()
+        var view = GetApiView(collectVM: vModel)
+        let vc = UIHostingController(rootView: view)
+        rootViewController = vc
+        view.typeHandler = { [weak self] type in
+            self?.typeHandler?(type)
+        }
     }
 }
 

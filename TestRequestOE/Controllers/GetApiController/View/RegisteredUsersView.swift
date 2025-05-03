@@ -29,6 +29,6 @@ struct RegisteredUsersView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .background(SwiftUI.Color.black)
+        .background(T_Color.white.color)
     }
 }
