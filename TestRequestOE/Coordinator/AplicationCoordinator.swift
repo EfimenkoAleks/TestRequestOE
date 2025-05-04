@@ -18,7 +18,7 @@ final class AplicationCoordinator: Coordinator {
     var transitionController: UINavigationController?
     
     var window: UIWindow?
-    var selectedTab: TabBarItem = .getApi
+    var selectedTab: TabBarItem = .users
     var navigateOnboarding = CurrentValueSubject<NavDetailCoordinator, Never>(.main)
     var subscriptions = Set<AnyCancellable>()
     

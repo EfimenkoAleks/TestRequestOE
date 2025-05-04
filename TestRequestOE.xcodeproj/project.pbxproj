@@ -28,6 +28,8 @@
 		CE97684F2DC62EA10035E65E /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97684E2DC62EA10035E65E /* AsyncCachedImage.swift */; };
 		CE9768522DC62F280035E65E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768512DC62F280035E65E /* ImageService.swift */; };
 		CE9768542DC62F790035E65E /* ImageServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768532DC62F790035E65E /* ImageServiceImplementation.swift */; };
+		CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768552DC72D540035E65E /* T_TabbarItem.swift */; };
+		CE9768582DC72F380035E65E /* TabTarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768572DC72F380035E65E /* TabTarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		CE97684E2DC62EA10035E65E /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
 		CE9768512DC62F280035E65E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		CE9768532DC62F790035E65E /* ImageServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceImplementation.swift; sourceTree = "<group>"; };
+		CE9768552DC72D540035E65E /* T_TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_TabbarItem.swift; sourceTree = "<group>"; };
+		CE9768572DC72F380035E65E /* TabTarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9768322DC4CBEE0035E65E /* TabBarItem.swift */,
+				CE9768552DC72D540035E65E /* T_TabbarItem.swift */,
+				CE9768572DC72F380035E65E /* TabTarView.swift */,
 			);
 			path = TabController;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */,
 				CE97682F2DC4CA850035E65E /* Block.swift in Sources */,
 				CE9768452DC508220035E65E /* UserCellView.swift in Sources */,
+				CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */,
 				CE9768522DC62F280035E65E /* ImageService.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
 				CE97684B2DC50A570035E65E /* NetworkService.swift in Sources */,
@@ -313,6 +320,7 @@
 				CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */,
 				CE9768412DC4F3E50035E65E /* GetApiViewModel.swift in Sources */,
 				CE9768542DC62F790035E65E /* ImageServiceImplementation.swift in Sources */,
+				CE9768582DC72F380035E65E /* TabTarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
