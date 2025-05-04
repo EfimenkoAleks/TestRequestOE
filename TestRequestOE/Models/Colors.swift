@@ -14,7 +14,9 @@ enum T_Color {
     case grayColor
     case grayLineColor
     case textColor
+    case secondaryTextColor
     case yellowColor
+    case redColor
     case white
     case black
 }
@@ -30,7 +32,9 @@ extension T_Color {
         case .grayColor: return Color("grayColor")
         case .grayLineColor: return Color("grayLineColor")
         case .textColor: return Color("textColor")
+        case .secondaryTextColor: return Color("secondaryTextColor")
         case .yellowColor: return Color("yellowColor")
+        case .redColor: return Color("redColor")
         case .black: return Color.black
         case .white: return Color.white
         }

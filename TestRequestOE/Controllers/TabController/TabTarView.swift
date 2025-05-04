@@ -10,7 +10,7 @@ import SwiftUI
 struct TabTarView: View {
     
     var view1: GetApiView
-    var view2: GetApiView
+    var view2: PostApiView
     
     @State var selected = TabBarItem.users.tab.name
     var typeHandler: Block<(TabBarItem)>?

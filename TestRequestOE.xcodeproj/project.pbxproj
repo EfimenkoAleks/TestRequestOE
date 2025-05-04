@@ -30,6 +30,14 @@
 		CE9768542DC62F790035E65E /* ImageServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768532DC62F790035E65E /* ImageServiceImplementation.swift */; };
 		CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768552DC72D540035E65E /* T_TabbarItem.swift */; };
 		CE9768582DC72F380035E65E /* TabTarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768572DC72F380035E65E /* TabTarView.swift */; };
+		CE97685C2DC799B30035E65E /* PostApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97685B2DC799B30035E65E /* PostApiView.swift */; };
+		CE97685F2DC7E8E20035E65E /* PostApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97685E2DC7E8E20035E65E /* PostApiViewModel.swift */; };
+		CE9768622DC7ED560035E65E /* RegistrUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768612DC7ED560035E65E /* RegistrUser.swift */; };
+		CE9768642DC7EFAC0035E65E /* SignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768632DC7EFAC0035E65E /* SignInButtonView.swift */; };
+		CE9768662DC7EFCF0035E65E /* PositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768652DC7EFCF0035E65E /* PositionView.swift */; };
+		CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768672DC7EFFE0035E65E /* CustomTextFieldWithLable.swift */; };
+		CE97686A2DC7F0290035E65E /* UploadButtonViewWithLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768692DC7F0290035E65E /* UploadButtonViewWithLable.swift */; };
+		CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686B2DC809310035E65E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +66,14 @@
 		CE9768532DC62F790035E65E /* ImageServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceImplementation.swift; sourceTree = "<group>"; };
 		CE9768552DC72D540035E65E /* T_TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_TabbarItem.swift; sourceTree = "<group>"; };
 		CE9768572DC72F380035E65E /* TabTarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTarView.swift; sourceTree = "<group>"; };
+		CE97685B2DC799B30035E65E /* PostApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiView.swift; sourceTree = "<group>"; };
+		CE97685E2DC7E8E20035E65E /* PostApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiViewModel.swift; sourceTree = "<group>"; };
+		CE9768612DC7ED560035E65E /* RegistrUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrUser.swift; sourceTree = "<group>"; };
+		CE9768632DC7EFAC0035E65E /* SignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonView.swift; sourceTree = "<group>"; };
+		CE9768652DC7EFCF0035E65E /* PositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionView.swift; sourceTree = "<group>"; };
+		CE9768672DC7EFFE0035E65E /* CustomTextFieldWithLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithLable.swift; sourceTree = "<group>"; };
+		CE9768692DC7F0290035E65E /* UploadButtonViewWithLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadButtonViewWithLable.swift; sourceTree = "<group>"; };
+		CE97686B2DC809310035E65E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +149,7 @@
 		CE9768302DC4CBB70035E65E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768592DC799770035E65E /* PostApiController */,
 				CE9768352DC4E81F0035E65E /* GetApiController */,
 				CE9768312DC4CBC70035E65E /* TabController */,
 			);
@@ -190,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				CE97683B2DC4E9F30035E65E /* Colors.swift */,
+				CE97686B2DC809310035E65E /* ImagePicker.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +246,44 @@
 				CE9768532DC62F790035E65E /* ImageServiceImplementation.swift */,
 			);
 			path = ImageService;
+			sourceTree = "<group>";
+		};
+		CE9768592DC799770035E65E /* PostApiController */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768602DC7ED240035E65E /* Model */,
+				CE97685D2DC7E8B00035E65E /* ViewModel */,
+				CE97685A2DC799940035E65E /* View */,
+			);
+			path = PostApiController;
+			sourceTree = "<group>";
+		};
+		CE97685A2DC799940035E65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE97685B2DC799B30035E65E /* PostApiView.swift */,
+				CE9768632DC7EFAC0035E65E /* SignInButtonView.swift */,
+				CE9768652DC7EFCF0035E65E /* PositionView.swift */,
+				CE9768672DC7EFFE0035E65E /* CustomTextFieldWithLable.swift */,
+				CE9768692DC7F0290035E65E /* UploadButtonViewWithLable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE97685D2DC7E8B00035E65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE97685E2DC7E8E20035E65E /* PostApiViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE9768602DC7ED240035E65E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768612DC7ED560035E65E /* RegistrUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +358,9 @@
 			files = (
 				CE9768482DC509F80035E65E /* DIContainer.swift in Sources */,
 				CE9768392DC4E8850035E65E /* GetApiView.swift in Sources */,
+				CE97686A2DC7F0290035E65E /* UploadButtonViewWithLable.swift in Sources */,
 				CE97683C2DC4E9F30035E65E /* Colors.swift in Sources */,
+				CE9768662DC7EFCF0035E65E /* PositionView.swift in Sources */,
 				CE9768252DC4C8CA0035E65E /* AplicationCoordinator.swift in Sources */,
 				CE9768432DC507E50035E65E /* RegisteredUsersView.swift in Sources */,
 				CE97684F2DC62EA10035E65E /* AsyncCachedImage.swift in Sources */,
@@ -310,13 +368,19 @@
 				CE97684D2DC50A790035E65E /* NetworkServiceImplementation.swift in Sources */,
 				CE97682C2DC4C9FD0035E65E /* SingleCoordinator.swift in Sources */,
 				CE97682F2DC4CA850035E65E /* Block.swift in Sources */,
+				CE97685F2DC7E8E20035E65E /* PostApiViewModel.swift in Sources */,
 				CE9768452DC508220035E65E /* UserCellView.swift in Sources */,
 				CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */,
 				CE9768522DC62F280035E65E /* ImageService.swift in Sources */,
+				CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */,
+				CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
 				CE97684B2DC50A570035E65E /* NetworkService.swift in Sources */,
 				CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */,
 				CE97683F2DC4F1FF0035E65E /* User.swift in Sources */,
+				CE97685C2DC799B30035E65E /* PostApiView.swift in Sources */,
+				CE9768642DC7EFAC0035E65E /* SignInButtonView.swift in Sources */,
+				CE9768622DC7ED560035E65E /* RegistrUser.swift in Sources */,
 				CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */,
 				CE9768412DC4F3E50035E65E /* GetApiViewModel.swift in Sources */,
 				CE9768542DC62F790035E65E /* ImageServiceImplementation.swift in Sources */,
@@ -467,9 +531,12 @@
 				DEVELOPMENT_TEAM = 364PACBHLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestRequestOE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires to access your photo library to show image on profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,9 +564,12 @@
 				DEVELOPMENT_TEAM = 364PACBHLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestRequestOE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires to access your photo library to show image on profile";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

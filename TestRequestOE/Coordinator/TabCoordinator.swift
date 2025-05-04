@@ -26,9 +26,11 @@ final class TabCoordinator: Coordinator {
     func start() {
 
         let vModel = GetApiViewModel()
-        let view = GetApiView(collectVM: vModel)
+        let view = GetApiView(getVM: vModel)
+        let vModel2 = PostApiViewModel()
+        let view2 = PostApiView(postVM: vModel2)
         
-        var tabBar = TabTarView(view1: view, view2: view, selected: selectedTab.tab.name)
+        var tabBar = TabTarView(view1: view, view2: view2, selected: selectedTab.tab.name)
         tabBar.typeHandler = { [weak self] type in
             self?.typeHandler?(type)
         }
