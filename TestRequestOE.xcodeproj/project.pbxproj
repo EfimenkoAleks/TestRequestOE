@@ -43,6 +43,16 @@
 		CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */; };
 		CE9768762DC84A450035E65E /* EmailRegistredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768752DC84A450035E65E /* EmailRegistredView.swift */; };
 		CE9768792DC8A8700035E65E /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768782DC8A8700035E65E /* NoInternetView.swift */; };
+		CE97687C2DC8AA270035E65E /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97687B2DC8AA270035E65E /* Connectivity.swift */; };
+		CE9768802DC8AB960035E65E /* NoInternetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97687F2DC8AB960035E65E /* NoInternetViewModel.swift */; };
+		CE9768822DC8B3E20035E65E /* GetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768812DC8B3E20035E65E /* GetAssembly.swift */; };
+		CE9768852DC8B4C60035E65E /* TabCoordinatorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768842DC8B4C60035E65E /* TabCoordinatorInterface.swift */; };
+		CE9768872DC8B88D0035E65E /* PostAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768862DC8B88D0035E65E /* PostAssembly.swift */; };
+		CE9768892DC8BAEF0035E65E /* NoInternetAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768882DC8BAEF0035E65E /* NoInternetAssembly.swift */; };
+		CE97688E2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97688D2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift */; };
+		CE9768902DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97688F2DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift */; };
+		CE9768942DC8D54E0035E65E /* EmailRegistredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768932DC8D54E0035E65E /* EmailRegistredViewModel.swift */; };
+		CE9768962DC8D6DB0035E65E /* EmailRegistredAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768952DC8D6DB0035E65E /* EmailRegistredAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +94,16 @@
 		CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
 		CE9768752DC84A450035E65E /* EmailRegistredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistredView.swift; sourceTree = "<group>"; };
 		CE9768782DC8A8700035E65E /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
+		CE97687B2DC8AA270035E65E /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		CE97687F2DC8AB960035E65E /* NoInternetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetViewModel.swift; sourceTree = "<group>"; };
+		CE9768812DC8B3E20035E65E /* GetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAssembly.swift; sourceTree = "<group>"; };
+		CE9768842DC8B4C60035E65E /* TabCoordinatorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinatorInterface.swift; sourceTree = "<group>"; };
+		CE9768862DC8B88D0035E65E /* PostAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAssembly.swift; sourceTree = "<group>"; };
+		CE9768882DC8BAEF0035E65E /* NoInternetAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetAssembly.swift; sourceTree = "<group>"; };
+		CE97688D2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredViewModel.swift; sourceTree = "<group>"; };
+		CE97688F2DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredAssembly.swift; sourceTree = "<group>"; };
+		CE9768932DC8D54E0035E65E /* EmailRegistredViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistredViewModel.swift; sourceTree = "<group>"; };
+		CE9768952DC8D6DB0035E65E /* EmailRegistredAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistredAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +152,10 @@
 		CE9768232DC4C8B50035E65E /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				CE97688A2DC8BC7C0035E65E /* Assembly */,
 				CE9768262DC4C9240035E65E /* CoordinatorProtocol */,
 				CE9768242DC4C8CA0035E65E /* AplicationCoordinator.swift */,
-				CE9768292DC4C99D0035E65E /* TabCoordinator.swift */,
+				CE9768832DC8B49E0035E65E /* TabCoordinator */,
 				CE97682B2DC4C9FD0035E65E /* SingleCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -236,6 +257,7 @@
 		CE9768462DC509930035E65E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CE97687A2DC8AA170035E65E /* Connectivity */,
 				CE9768502DC62F020035E65E /* ImageService */,
 				CE9768492DC50A310035E65E /* NetworkService */,
 				CE9768472DC509F80035E65E /* DIContainer.swift */,
@@ -304,7 +326,8 @@
 		CE9768712DC844FA0035E65E /* SuccessfullyRegisteredController */ = {
 			isa = PBXGroup;
 			children = (
-				CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */,
+				CE97688C2DC8CCBD0035E65E /* ViewModel */,
+				CE97688B2DC8CCB40035E65E /* View */,
 			);
 			path = SuccessfullyRegisteredController;
 			sourceTree = "<group>";
@@ -312,7 +335,8 @@
 		CE9768742DC84A0D0035E65E /* EmailRegistred */ = {
 			isa = PBXGroup;
 			children = (
-				CE9768752DC84A450035E65E /* EmailRegistredView.swift */,
+				CE9768922DC8D5300035E65E /* ViewModel */,
+				CE9768912DC8D5170035E65E /* View */,
 			);
 			path = EmailRegistred;
 			sourceTree = "<group>";
@@ -320,9 +344,87 @@
 		CE9768772DC8A84E0035E65E /* NoInternet */ = {
 			isa = PBXGroup;
 			children = (
-				CE9768782DC8A8700035E65E /* NoInternetView.swift */,
+				CE97687E2DC8AB700035E65E /* ViewModel */,
+				CE97687D2DC8AB640035E65E /* View */,
 			);
 			path = NoInternet;
+			sourceTree = "<group>";
+		};
+		CE97687A2DC8AA170035E65E /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				CE97687B2DC8AA270035E65E /* Connectivity.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		CE97687D2DC8AB640035E65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768782DC8A8700035E65E /* NoInternetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE97687E2DC8AB700035E65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE97687F2DC8AB960035E65E /* NoInternetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE9768832DC8B49E0035E65E /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768292DC4C99D0035E65E /* TabCoordinator.swift */,
+				CE9768842DC8B4C60035E65E /* TabCoordinatorInterface.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		CE97688A2DC8BC7C0035E65E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768812DC8B3E20035E65E /* GetAssembly.swift */,
+				CE9768862DC8B88D0035E65E /* PostAssembly.swift */,
+				CE9768882DC8BAEF0035E65E /* NoInternetAssembly.swift */,
+				CE97688F2DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift */,
+				CE9768952DC8D6DB0035E65E /* EmailRegistredAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CE97688B2DC8CCB40035E65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE97688C2DC8CCBD0035E65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE97688D2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE9768912DC8D5170035E65E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768752DC84A450035E65E /* EmailRegistredView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE9768922DC8D5300035E65E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768932DC8D54E0035E65E /* EmailRegistredViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +505,9 @@
 				CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */,
 				CE9768662DC7EFCF0035E65E /* PositionView.swift in Sources */,
 				CE9768252DC4C8CA0035E65E /* AplicationCoordinator.swift in Sources */,
+				CE9768962DC8D6DB0035E65E /* EmailRegistredAssembly.swift in Sources */,
+				CE9768852DC8B4C60035E65E /* TabCoordinatorInterface.swift in Sources */,
+				CE9768892DC8BAEF0035E65E /* NoInternetAssembly.swift in Sources */,
 				CE9768432DC507E50035E65E /* RegisteredUsersView.swift in Sources */,
 				CE97684F2DC62EA10035E65E /* AsyncCachedImage.swift in Sources */,
 				CE9768102DC4BCD50035E65E /* AppDelegate.swift in Sources */,
@@ -413,18 +518,25 @@
 				CE97686E2DC835810035E65E /* TokenModel.swift in Sources */,
 				CE9768452DC508220035E65E /* UserCellView.swift in Sources */,
 				CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */,
+				CE9768872DC8B88D0035E65E /* PostAssembly.swift in Sources */,
 				CE9768522DC62F280035E65E /* ImageService.swift in Sources */,
 				CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */,
 				CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */,
 				CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */,
+				CE9768802DC8AB960035E65E /* NoInternetViewModel.swift in Sources */,
 				CE9768762DC84A450035E65E /* EmailRegistredView.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
+				CE9768942DC8D54E0035E65E /* EmailRegistredViewModel.swift in Sources */,
 				CE97684B2DC50A570035E65E /* NetworkService.swift in Sources */,
 				CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */,
 				CE97683F2DC4F1FF0035E65E /* User.swift in Sources */,
+				CE97688E2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift in Sources */,
+				CE9768902DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift in Sources */,
+				CE97687C2DC8AA270035E65E /* Connectivity.swift in Sources */,
 				CE97685C2DC799B30035E65E /* PostApiView.swift in Sources */,
 				CE9768642DC7EFAC0035E65E /* SignInButtonView.swift in Sources */,
 				CE9768622DC7ED560035E65E /* RegistrUser.swift in Sources */,
+				CE9768822DC8B3E20035E65E /* GetAssembly.swift in Sources */,
 				CE9768282DC4C93A0035E65E /* Coordinator.swift in Sources */,
 				CE9768412DC4F3E50035E65E /* GetApiViewModel.swift in Sources */,
 				CE9768542DC62F790035E65E /* ImageServiceImplementation.swift in Sources */,

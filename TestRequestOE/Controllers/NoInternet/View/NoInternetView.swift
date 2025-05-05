@@ -1,5 +1,5 @@
 //
-//  SuccessfullyRegisteredView.swift
+//  NoInternetView.swift
 //  TestRequestOE
 //
 //  Created by Aleksandr on 05.05.2025.
@@ -7,39 +7,27 @@
 
 import SwiftUI
 
-struct SuccessfullyRegisteredView: View {
+struct NoInternetView: View {
     
-    let nameImage: String = "successRegistr"
-    let text: String = "User successfully registered"
-    let nameButton: String = "Got it"
-    let nameClose: String = "close"
-    
+    @ObservedObject var noInternetVM : NoInternetViewModel
+   
     var body: some View {
         ZStack {
             Rectangle()
+                .ignoresSafeArea()
                 .foregroundStyle(T_Color.white.color)
             VStack {
-                HStack {
-                    Spacer()
-                    Button {
-                        
-                    } label: {
-                        Image(nameClose)
-                            .padding(.trailing, 20)
-                    }
-                }
-                Spacer()
                 VStack(spacing: 30) {
-                    Image(nameImage)
+                    Image(noInternetVM.nameImage)
                         .resizable()
                         .frame(width: 200, height: 200)
-                    Text(text)
+                    Text(noInternetVM.text)
                         .font(.system(size: 20))
                         .foregroundStyle(T_Color.textColor.color)
                     Button {
-                        
+                        noInternetVM.checkInternet()
                     } label: {
-                        Text(nameButton)
+                        Text(noInternetVM.nameButton)
                             .font(.system(size: 18, weight: .medium))
                             .foregroundStyle(T_Color.textColor.color)
                     }
@@ -48,12 +36,12 @@ struct SuccessfullyRegisteredView: View {
                     .clipShape(Capsule())
                     
                 }
-                Spacer()
             }
         }
     }
-}
 
-#Preview {
-    SuccessfullyRegisteredView()
 }
+//
+//#Preview {
+//    NoInternetView()
+//}

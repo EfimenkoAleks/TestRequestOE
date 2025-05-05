@@ -1,5 +1,5 @@
 //
-//  EmailRegistredView.swift
+//  SuccessfullyRegisteredView.swift
 //  TestRequestOE
 //
 //  Created by Aleksandr on 05.05.2025.
@@ -7,12 +7,9 @@
 
 import SwiftUI
 
-struct EmailRegistredView: View {
+struct SuccessfullyRegisteredView: View {
     
-    let nameImage: String = "emailRegistred"
-    let text: String = "That email is already registered"
-    let nameButton: String = "Try again"
-    let nameClose: String = "close"
+    @ObservedObject var successVM : SuccessfullyRegisteredViewModel
     
     var body: some View {
         ZStack {
@@ -22,24 +19,24 @@ struct EmailRegistredView: View {
                 HStack {
                     Spacer()
                     Button {
-                        
+                        successVM.back()
                     } label: {
-                        Image(nameClose)
+                        Image(successVM.nameClose)
                             .padding(.trailing, 20)
                     }
                 }
                 Spacer()
                 VStack(spacing: 30) {
-                    Image(nameImage)
+                    Image(successVM.nameImage)
                         .resizable()
                         .frame(width: 200, height: 200)
-                    Text(text)
+                    Text(successVM.text)
                         .font(.system(size: 20))
                         .foregroundStyle(T_Color.textColor.color)
                     Button {
-                        
+                        successVM.back()
                     } label: {
-                        Text(nameButton)
+                        Text(successVM.nameButton)
                             .font(.system(size: 18, weight: .medium))
                             .foregroundStyle(T_Color.textColor.color)
                     }
@@ -54,6 +51,6 @@ struct EmailRegistredView: View {
     }
 }
 
-#Preview {
-    EmailRegistredView()
-}
+//#Preview {
+//    SuccessfullyRegisteredView()
+//}

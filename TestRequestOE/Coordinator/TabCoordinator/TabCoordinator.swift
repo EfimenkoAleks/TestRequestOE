@@ -8,7 +8,11 @@
 import SwiftUI
 import Combine
 
-final class TabCoordinator: Coordinator {
+enum TabEvent {
+    case noInternet, successfulRegistration, emailAlreadyExists
+}
+
+final class TabCoordinator {
     var childCoordinators: [Coordinator] = []
     
     var transitionController: UINavigationController?
@@ -24,13 +28,11 @@ final class TabCoordinator: Coordinator {
     }
     
     func start() {
-
-        let vModel = GetApiViewModel()
-        let view = GetApiView(getVM: vModel)
-        let vModel2 = PostApiViewModel()
-        let view2 = PostApiView(postVM: vModel2)
         
-        var tabBar = TabTarView(view1: view, view2: view2, selected: selectedTab.tab.name)
+        let module = GetAssembly().createModule(coordinator: self)
+        let module2 = PostAssembly().createModule(coordinator: self)
+
+        var tabBar = TabTarView(view1: module.view, view2: module2.view, selected: selectedTab.tab.name)
         tabBar.typeHandler = { [weak self] type in
             self?.typeHandler?(type)
         }
@@ -40,3 +42,16 @@ final class TabCoordinator: Coordinator {
     }
 }
 
+extension TabCoordinator: TabCoordinatorInterface {
+    
+    func eventOccurred(with type: TabEvent) {
+        switch type {
+        case .noInternet:
+            hasSeenOnboarding.send(.noInternet)
+        case .successfulRegistration:
+            hasSeenOnboarding.send(.successfulRegistration)
+        case .emailAlreadyExists:
+            hasSeenOnboarding.send(.emailAlreadyExists)
+        }
+    }
+}

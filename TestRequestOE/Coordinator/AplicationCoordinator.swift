@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 enum NavDetailCoordinator {
-    case getApi, postApi, main
+    case main, noInternet, successfulRegistration, emailAlreadyExists
 }
 
 final class AplicationCoordinator: Coordinator {

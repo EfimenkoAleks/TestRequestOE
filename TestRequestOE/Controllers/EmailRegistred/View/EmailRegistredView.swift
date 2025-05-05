@@ -1,5 +1,5 @@
 //
-//  NoInternetView.swift
+//  EmailRegistredView.swift
 //  TestRequestOE
 //
 //  Created by Aleksandr on 05.05.2025.
@@ -7,27 +7,36 @@
 
 import SwiftUI
 
-struct NoInternetView: View {
-    let nameImage: String = "noInternet"
-    let text: String = "There is no internet connection"
-    let nameButton: String = "Try again"
+struct EmailRegistredView: View {
+    
+    @ObservedObject var registredVM : EmailRegistredViewModel
     
     var body: some View {
         ZStack {
             Rectangle()
                 .foregroundStyle(T_Color.white.color)
             VStack {
+                HStack {
+                    Spacer()
+                    Button {
+                        registredVM.back()
+                    } label: {
+                        Image(registredVM.nameClose)
+                            .padding(.trailing, 20)
+                    }
+                }
+                Spacer()
                 VStack(spacing: 30) {
-                    Image(nameImage)
+                    Image(registredVM.nameImage)
                         .resizable()
                         .frame(width: 200, height: 200)
-                    Text(text)
+                    Text(registredVM.text)
                         .font(.system(size: 20))
                         .foregroundStyle(T_Color.textColor.color)
                     Button {
-                        
+                        registredVM.back()
                     } label: {
-                        Text(nameButton)
+                        Text(registredVM.nameButton)
                             .font(.system(size: 18, weight: .medium))
                             .foregroundStyle(T_Color.textColor.color)
                     }
@@ -36,12 +45,12 @@ struct NoInternetView: View {
                     .clipShape(Capsule())
                     
                 }
+                Spacer()
             }
         }
     }
-
 }
 
-#Preview {
-    NoInternetView()
-}
+//#Preview {
+//    EmailRegistredView()
+//}

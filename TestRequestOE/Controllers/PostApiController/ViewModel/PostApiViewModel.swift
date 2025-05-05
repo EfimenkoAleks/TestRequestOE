@@ -14,6 +14,7 @@ struct Position {
 
 final class PostApiViewModel: ObservableObject {
     
+    weak var coordinator: (TabCoordinatorInterface)?
      var userPhone: String = ""
      var userEmail: String = ""
      var username: String = ""
@@ -37,7 +38,8 @@ final class PostApiViewModel: ObservableObject {
         ]
     private var networkService: NetworkService
     
-    init(networkService: NetworkService = DIContainer.default.networkService) {
+    init(coordinator: TabCoordinatorInterface, networkService: NetworkService = DIContainer.default.networkService) {
+        self.coordinator = coordinator
         self.networkService = networkService
       
     }
@@ -99,9 +101,9 @@ final class PostApiViewModel: ObservableObject {
     
     func checkIfValidData() {
         
-        ifValidUserName()
-        ifValidEmail()
-        ifValidPhone()
+       _ = ifValidUserName()
+       _ = ifValidEmail()
+       _ = ifValidPhone()
         messagePhoto = strImage == nil ? "Required field" : ""
     }
     
@@ -111,7 +113,18 @@ final class PostApiViewModel: ObservableObject {
         ifValidUserName(),
         ifValidEmail(),
         ifValidPhone() else { return }
-            let user = RegistrUser(name: username, email: userEmail, phone: userPhone, position_id: 1, photo: image)
         
+        if testInternet() {
+            let user = RegistrUser(name: username, email: userEmail, phone: userPhone, position_id: 1, photo: image)
+        }
+    }
+    
+    func testInternet() -> Bool {
+        if Connectivity.isConnectedToNetwork() {
+            return true
+        } else {
+            coordinator?.eventOccurred(with: .noInternet)
+            return false
+        }
     }
 }
