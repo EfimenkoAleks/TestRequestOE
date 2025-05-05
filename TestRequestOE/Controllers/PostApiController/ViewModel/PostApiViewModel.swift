@@ -42,33 +42,33 @@ final class PostApiViewModel: ObservableObject {
       
     }
     
-    func ifValidUserName() {
+    func ifValidUserName() -> Bool {
         guard username.count > 1 && username.count < 61 else {
             messageName = "Username should contain 2-60 characters"
-            return
+            return false
         }
         messageName = ""
-    //    return true
+        return true
     }
     
-    func ifValidEmail() {
+    func ifValidEmail() -> Bool {
         guard !userEmail.isEmpty,
             isValid(userEmail) else {
             messageEmail = "Invalid email"
-            return
+            return false
         }
         messageEmail = ""
-       
+        return true
     }
     
-    func ifValidPhone() {
+    func ifValidPhone() -> Bool {
         guard validatePhone(phone: userPhone),
             userPhone.hasPrefix("+380") && userPhone.count == 13 else {
             messagePhone = "Incorrect phone number"
-            return
+            return false
         }
         messagePhone = "+38 (XXX) XXX - XX - XX"
-       
+        return true
     }
     
     private func validatePhone(phone: String) -> Bool {
@@ -97,17 +97,21 @@ final class PostApiViewModel: ObservableObject {
         strImage = imageStr
     }
     
-    func checkIfValidData() -> Bool {
-         ifValidUserName()
-              ifValidEmail()
-              ifValidPhone()
+    func checkIfValidData() {
+        
+        ifValidUserName()
+        ifValidEmail()
+        ifValidPhone()
         messagePhoto = strImage == nil ? "Required field" : ""
-        return true
     }
     
     func registrUser() {
-        if checkIfValidData() {
-            // post
-        }
+         checkIfValidData()
+        guard let image = strImage,
+        ifValidUserName(),
+        ifValidEmail(),
+        ifValidPhone() else { return }
+            let user = RegistrUser(name: username, email: userEmail, phone: userPhone, position_id: 1, photo: image)
+        
     }
 }

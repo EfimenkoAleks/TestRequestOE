@@ -14,8 +14,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -77,8 +77,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -205,8 +205,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -268,8 +268,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -346,8 +346,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -454,8 +454,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -527,22 +527,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "26598437-B5B7-4452-959F-31478C157AC5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestRequestOE/Controllers/PostApiController/ViewModel/PostApiViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "ifValidEmail()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D74AA3CB-1C92-48C1-B9A1-9EE5E234C5C1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -550,8 +534,8 @@
             filePath = "TestRequestOE/Controllers/PostApiController/ViewModel/PostApiViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "checkIfValidData()"
             landmarkType = "7">
             <Locations>
