@@ -40,6 +40,7 @@
 		CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686B2DC809310035E65E /* ImagePicker.swift */; };
 		CE97686E2DC835810035E65E /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686D2DC835810035E65E /* TokenModel.swift */; };
 		CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686F2DC8374D0035E65E /* PositionModel.swift */; };
+		CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		CE97686B2DC809310035E65E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CE97686D2DC835810035E65E /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		CE97686F2DC8374D0035E65E /* PositionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionModel.swift; sourceTree = "<group>"; };
+		CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		CE9768302DC4CBB70035E65E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768712DC844FA0035E65E /* SuccessfullyRegisteredController */,
 				CE9768592DC799770035E65E /* PostApiController */,
 				CE9768352DC4E81F0035E65E /* GetApiController */,
 				CE9768312DC4CBC70035E65E /* TabController */,
@@ -292,6 +295,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE9768712DC844FA0035E65E /* SuccessfullyRegisteredController */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */,
+			);
+			path = SuccessfullyRegisteredController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,6 +391,7 @@
 				CE9768452DC508220035E65E /* UserCellView.swift in Sources */,
 				CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */,
 				CE9768522DC62F280035E65E /* ImageService.swift in Sources */,
+				CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */,
 				CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */,
 				CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
