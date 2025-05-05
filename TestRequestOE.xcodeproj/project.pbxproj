@@ -42,6 +42,7 @@
 		CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686F2DC8374D0035E65E /* PositionModel.swift */; };
 		CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */; };
 		CE9768762DC84A450035E65E /* EmailRegistredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768752DC84A450035E65E /* EmailRegistredView.swift */; };
+		CE9768792DC8A8700035E65E /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768782DC8A8700035E65E /* NoInternetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		CE97686F2DC8374D0035E65E /* PositionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionModel.swift; sourceTree = "<group>"; };
 		CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
 		CE9768752DC84A450035E65E /* EmailRegistredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistredView.swift; sourceTree = "<group>"; };
+		CE9768782DC8A8700035E65E /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		CE9768302DC4CBB70035E65E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768772DC8A84E0035E65E /* NoInternet */,
 				CE9768742DC84A0D0035E65E /* EmailRegistred */,
 				CE9768712DC844FA0035E65E /* SuccessfullyRegisteredController */,
 				CE9768592DC799770035E65E /* PostApiController */,
@@ -314,6 +317,14 @@
 			path = EmailRegistred;
 			sourceTree = "<group>";
 		};
+		CE9768772DC8A84E0035E65E /* NoInternet */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768782DC8A8700035E65E /* NoInternetView.swift */,
+			);
+			path = NoInternet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +397,7 @@
 			files = (
 				CE9768482DC509F80035E65E /* DIContainer.swift in Sources */,
 				CE9768392DC4E8850035E65E /* GetApiView.swift in Sources */,
+				CE9768792DC8A8700035E65E /* NoInternetView.swift in Sources */,
 				CE97686A2DC7F0290035E65E /* UploadButtonViewWithLable.swift in Sources */,
 				CE97683C2DC4E9F30035E65E /* Colors.swift in Sources */,
 				CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */,
