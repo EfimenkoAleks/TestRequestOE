@@ -41,6 +41,7 @@
 		CE97686E2DC835810035E65E /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686D2DC835810035E65E /* TokenModel.swift */; };
 		CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97686F2DC8374D0035E65E /* PositionModel.swift */; };
 		CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */; };
+		CE9768762DC84A450035E65E /* EmailRegistredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9768752DC84A450035E65E /* EmailRegistredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		CE97686D2DC835810035E65E /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		CE97686F2DC8374D0035E65E /* PositionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionModel.swift; sourceTree = "<group>"; };
 		CE9768722DC845400035E65E /* SuccessfullyRegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullyRegisteredView.swift; sourceTree = "<group>"; };
+		CE9768752DC84A450035E65E /* EmailRegistredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		CE9768302DC4CBB70035E65E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE9768742DC84A0D0035E65E /* EmailRegistred */,
 				CE9768712DC844FA0035E65E /* SuccessfullyRegisteredController */,
 				CE9768592DC799770035E65E /* PostApiController */,
 				CE9768352DC4E81F0035E65E /* GetApiController */,
@@ -303,6 +306,14 @@
 			path = SuccessfullyRegisteredController;
 			sourceTree = "<group>";
 		};
+		CE9768742DC84A0D0035E65E /* EmailRegistred */ = {
+			isa = PBXGroup;
+			children = (
+				CE9768752DC84A450035E65E /* EmailRegistredView.swift */,
+			);
+			path = EmailRegistred;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,6 +405,7 @@
 				CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */,
 				CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */,
 				CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */,
+				CE9768762DC84A450035E65E /* EmailRegistredView.swift in Sources */,
 				CE9768332DC4CBEE0035E65E /* TabBarItem.swift in Sources */,
 				CE97684B2DC50A570035E65E /* NetworkService.swift in Sources */,
 				CE97682A2DC4C99D0035E65E /* TabCoordinator.swift in Sources */,

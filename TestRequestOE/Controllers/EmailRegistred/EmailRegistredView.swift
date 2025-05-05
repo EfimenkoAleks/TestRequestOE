@@ -1,5 +1,5 @@
 //
-//  SuccessfullyRegisteredView.swift
+//  EmailRegistredView.swift
 //  TestRequestOE
 //
 //  Created by Aleksandr on 05.05.2025.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct SuccessfullyRegisteredView: View {
+struct EmailRegistredView: View {
     
-    let nameImage: String = "successRegistr"
-    let text: String = "User successfully registered"
-    let nameButton: String = "Got it"
+    let nameImage: String = "emailRegistred"
+    let text: String = "That email is already registered"
+    let nameButton: String = "Try again"
     let nameClose: String = "close"
     
     var body: some View {
@@ -55,5 +55,5 @@ struct SuccessfullyRegisteredView: View {
 }
 
 #Preview {
-    SuccessfullyRegisteredView()
+    EmailRegistredView()
 }
