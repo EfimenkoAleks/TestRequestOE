@@ -13,6 +13,9 @@ enum NavDetailCoordinator {
 }
 
 final class AplicationCoordinator: Coordinator {
+    
+    // MARK: - Properties
+    
     var childCoordinators: [Coordinator] = []
     
     var transitionController: UINavigationController?
@@ -25,6 +28,8 @@ final class AplicationCoordinator: Coordinator {
     init(window: UIWindow?) {
         self.window = window
     }
+    
+    // MARK: - Start of Coordinators
     
     func start() {
         navigateOnboarding.sink { [weak self]  navigate in

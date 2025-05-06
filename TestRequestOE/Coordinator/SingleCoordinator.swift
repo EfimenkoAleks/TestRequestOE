@@ -9,6 +9,9 @@ import SwiftUI
 import Combine
 
 final class SingleCoordinator: Coordinator {
+    
+    // MARK: - Properties
+    
     var transitionController: UINavigationController?
    
     var childCoordinators: [Coordinator] = []
@@ -18,6 +21,8 @@ final class SingleCoordinator: Coordinator {
         self.hasSeenOnboarding = hasSeenOnboarding
         transitionController = UINavigationController()
     }
+    
+    // MARK: - Launch the selected view
     
     func start() {
         switch hasSeenOnboarding.value {

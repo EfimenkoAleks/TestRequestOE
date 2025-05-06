@@ -13,6 +13,9 @@ enum TabEvent {
 }
 
 final class TabCoordinator {
+    
+    // MARK: - Properties
+    
     var childCoordinators: [Coordinator] = []
     
     var transitionController: UINavigationController?
@@ -26,6 +29,8 @@ final class TabCoordinator {
         self.hasSeenOnboarding = hasSeenOnboarding
         self.selectedTab = selectedTab
     }
+    
+    // MARK: - Launching tab bar modules
     
     func start() {
         
@@ -41,6 +46,8 @@ final class TabCoordinator {
         rootViewController = vc
     }
 }
+
+    //MARK: - Events that the coordinator receives
 
 extension TabCoordinator: TabCoordinatorInterface {
     

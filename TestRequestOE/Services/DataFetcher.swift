@@ -13,14 +13,17 @@ protocol DataFetcherInterface: AnyObject {
 }
 
 final class DataFetcher: DataFetcherInterface {
-    
+   
+    // MARK: - Properties
     var nextPath: String?
     let apiService: NetworkService = DIContainer.default.networkService
     
+    // MARK: - Init
     init() {
         nextPath = UserDefaults.standard.value(forKey: "nextPath") as? String
     }
     
+    // User registration
     func postUser(_ user: RegistrUser, completionHandler: @escaping (Postmodel) -> Void) {
         apiService.getToken { [weak self] result in
             switch result {
@@ -41,6 +44,7 @@ final class DataFetcher: DataFetcherInterface {
         }
     }
     
+    // Getting user positions
     func getPosition(completionHandler: @escaping ([OwnPosition]) -> Void) {
         apiService.getPosition { result in
             switch result {

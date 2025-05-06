@@ -16,3 +16,9 @@ struct OwnPosition: Decodable {
     var id: Int?
     var name: String?
 }
+
+struct Position {
+    let id: UUID
+    var idPosition: Int
+    var name: String
+}

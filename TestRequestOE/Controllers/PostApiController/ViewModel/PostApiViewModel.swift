@@ -8,13 +8,9 @@
 import SwiftUI
 import Combine
 
-struct Position {
-    let id: UUID
-    var idPosition: Int
-    var name: String
-}
-
 final class PostApiViewModel: ObservableObject {
+    
+    // MARK: - Properties
     
     weak var coordinator: (TabCoordinatorInterface)?
     @Published var userPhone: String = ""
@@ -37,6 +33,8 @@ final class PostApiViewModel: ObservableObject {
     var positions: [Position] = []
     private var fetcher: DataFetcherInterface
     private var cancellables = Set<AnyCancellable>()
+    
+    // MARK: - Init
     
     init(coordinator: TabCoordinatorInterface, fetcher: DataFetcherInterface = DataFetcher()) {
         self.coordinator = coordinator
@@ -67,6 +65,8 @@ final class PostApiViewModel: ObservableObject {
             }
             .store(in: &cancellables)
     }
+   
+    // MARK: - Validation of text fields
     
     func updateField() {
         userPhone = ""
@@ -129,19 +129,13 @@ final class PostApiViewModel: ObservableObject {
         return emailTest.evaluate(with: email)
     }
     
-    func convertImage() {
-        guard let image = selectedImage else { return }
-        let imageData: Data? = image.jpegData(compressionQuality: 0.4)
-        let imageStr = imageData?.base64EncodedString(options: .lineLength64Characters) ?? ""
-        strImage = imageStr
-        validateUser()
-    }
-    
     func validateUser() {
         if selectedImage != nil, ifValidUserName(), ifValidEmail(), ifValidPhone() {
             isCompletedUser = true
         }
     }
+    
+    // MARK: - Checking the validity of data
     
     func checkIfValidData() {
         
@@ -162,6 +156,18 @@ final class PostApiViewModel: ObservableObject {
             isCorrectField = true
         }
     }
+    
+    // MARK: - Photo conversion
+    
+    func convertImage() {
+        guard let image = selectedImage else { return }
+        let imageData: Data? = image.jpegData(compressionQuality: 0.4)
+        let imageStr = imageData?.base64EncodedString(options: .lineLength64Characters) ?? ""
+        strImage = imageStr
+        validateUser()
+    }
+    
+    // MARK: - User registration request
     
     func registrUser() {
          checkIfValidData()
@@ -185,6 +191,8 @@ final class PostApiViewModel: ObservableObject {
             }
         }
     }
+    
+    // MARK: - Check for internet connection
     
     func testInternet() -> Bool {
         if Connectivity.isConnectedToNetwork() {

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostApiView: View {
+    
+    // MARK: - Properties
  
     @ObservedObject var postVM : PostApiViewModel
     var typeHandler: Block<(TabBarItem)>?
@@ -21,6 +23,8 @@ struct PostApiView: View {
     @State var isSelectedPosition: Bool = false
     @State private var isPickerPresented = false
     @State var resorce: UIImagePickerController.SourceType = .photoLibrary
+    
+    // MARK: - Creating a view screen with a post request
     
     var body: some View {
        

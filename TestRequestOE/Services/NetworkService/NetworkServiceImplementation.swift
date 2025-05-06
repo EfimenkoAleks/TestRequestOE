@@ -14,6 +14,8 @@ enum NetworkLoadEvent {
 
 final class NetworkServiceImplementation {
     
+    // MARK: - Properties
+    
     private var session: URLSession
     private let encoder = JSONEncoder()
     private let baseUrl = "https://frontend-test-assignment-api.abz.agency/api/v1"
@@ -32,6 +34,7 @@ extension NetworkServiceImplementation: NetworkService {
     
     func postUser(user: RegistrUser, token: String, completionHandler: @escaping (Result<Postmodel, Error>) -> Void) {
         
+        // Create completion with model
         let completionBlock: (Result<Postmodel, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completionHandler(result)
@@ -42,13 +45,28 @@ extension NetworkServiceImplementation: NetworkService {
         guard let url = URL(string: baseUrl + users) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-       // request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
 
-        // 2. Prepare the body
-     //   let user = User(name: "John Doe", email: "john@example.com")
-        guard let httpBody = try? JSONEncoder().encode(user) else { return }
-        request.httpBody = httpBody
+//        // 2. Prepare the body
+//        guard let httpBody = try? JSONEncoder().encode(user) else { return }
+//        request.httpBody = httpBody
+        
+        // 4. Set HTTP body
+        let parameters: [String : Any] = [
+            "name": user.name,
+            "email": user.email,
+            "phone": user.phone,
+            "position_id": user.position_id,
+            "photo": user.photo
+        ]
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            print("Failed to encode parameters: \(error)")
+            return
+        }
+        
 
         // 3. Send request
         session.dataTask(with: request) { data, response, error in
@@ -57,10 +75,12 @@ extension NetworkServiceImplementation: NetworkService {
                 return
             }
 
+            // Check HTTP response status
             if let httpResponse = response as? HTTPURLResponse {
                 print("✅ Status Code: \(httpResponse.statusCode)")
             }
 
+            // Parse JSON data
             guard let data = data else { return }
                 if let responseBody = try? JSONSerialization.jsonObject(with: data) {
                     print("📦 Response Body:", responseBody)
@@ -68,6 +88,7 @@ extension NetworkServiceImplementation: NetworkService {
                     print("⚠️ Could not parse response body")
                 }
             
+            // Parse JSON data in model
             do {
                 let model = try JSONDecoder().decode(Postmodel.self, from: data)
                 completionBlock(.success(model))
@@ -79,7 +100,8 @@ extension NetworkServiceImplementation: NetworkService {
     }
     
     func fetchUsers(load: NetworkLoadEvent, completionHandler: @escaping (Result<ResponseUser, Error>) -> Void) {
-        
+      
+        // Create string url
         var urlStr = baseUrl
         
         switch load {
@@ -88,13 +110,15 @@ extension NetworkServiceImplementation: NetworkService {
         case .loadMore(let more):
             urlStr = more
         }
-        
+      
+        // Create completion with model
         let completionBlock: (Result<ResponseUser, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completionHandler(result)
             }
         }
-        
+       
+        // create url
         guard let url = URL(string: urlStr) else {
             completionBlock(.failure(URLError(.badURL)))
             return
@@ -122,6 +146,7 @@ extension NetworkServiceImplementation: NetworkService {
                 return
             }
             
+            // Parse JSON data in model
             do {
                 let model = try JSONDecoder().decode(ResponseUser.self, from: data)
                 completionBlock(.success(model))
@@ -135,13 +160,15 @@ extension NetworkServiceImplementation: NetworkService {
     func getToken(completionHandler: @escaping (Result<TokenModel, Error>) -> Void) {
         
         var urlStr = baseUrl + token
-        
+      
+        // Create completion with model
         let completionBlock: (Result<TokenModel, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completionHandler(result)
             }
         }
         
+        // create url
         guard let url = URL(string: urlStr) else {
             completionBlock(.failure(URLError(.badURL)))
             return
@@ -169,6 +196,7 @@ extension NetworkServiceImplementation: NetworkService {
                 return
             }
             
+            // Parse JSON data to model
             do {
                 let model = try JSONDecoder().decode(TokenModel.self, from: data)
                 completionBlock(.success(model))
@@ -183,12 +211,14 @@ extension NetworkServiceImplementation: NetworkService {
         
         var urlStr = baseUrl + position
         
+        // Create completion with model
         let completionBlock: (Result<[OwnPosition], Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completionHandler(result)
             }
         }
         
+        // create url
         guard let url = URL(string: urlStr) else {
             completionBlock(.failure(URLError(.badURL)))
             return
@@ -216,6 +246,7 @@ extension NetworkServiceImplementation: NetworkService {
                 return
             }
             
+            // Parse JSON data in model
             do {
                 let model = try JSONDecoder().decode(PositionModel.self, from: data)
                 completionBlock(.success(model.positions))
