@@ -45,29 +45,13 @@ extension NetworkServiceImplementation: NetworkService {
         guard let url = URL(string: baseUrl + users) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+    //    request.addValue("application/json", forHTTPHeaderField: "Media type")
+        request.setValue(token, forHTTPHeaderField: "Token")
 
 //        // 2. Prepare the body
-//        guard let httpBody = try? JSONEncoder().encode(user) else { return }
-//        request.httpBody = httpBody
-        
-        // 4. Set HTTP body
-        let parameters: [String : Any] = [
-            "name": user.name,
-            "email": user.email,
-            "phone": user.phone,
-            "position_id": user.position_id,
-            "photo": user.photo
-        ]
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
-        } catch {
-            print("Failed to encode parameters: \(error)")
-            return
-        }
-        
-
+        guard let httpBody = try? JSONEncoder().encode(user) else { return }
+        request.httpBody = httpBody
+ 
         // 3. Send request
         session.dataTask(with: request) { data, response, error in
             if let error = error {

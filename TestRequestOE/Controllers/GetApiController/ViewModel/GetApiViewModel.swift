@@ -34,7 +34,9 @@ final class GetApiViewModel: ObservableObject {
                 guard let self = self else { return }
                 switch result {
                 case .success(let response):
-                    self.users = response.users ?? []
+                    var users = response.users ?? []
+                    users = users.sorted(by: {$0.registration_timestamp ?? 0 > $1.registration_timestamp ?? 0})
+                    self.users = users
                 case .failure( _):
                     break
                 }

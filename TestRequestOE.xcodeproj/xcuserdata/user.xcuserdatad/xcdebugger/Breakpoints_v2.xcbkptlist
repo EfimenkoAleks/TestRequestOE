@@ -14,8 +14,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -77,8 +77,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -125,8 +125,8 @@
             filePath = "TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "fetchUsers()"
             landmarkType = "7">
          </BreakpointContent>
@@ -220,8 +220,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -283,8 +283,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -361,8 +361,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -469,8 +469,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -780,14 +780,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A090D93C-CE51-4E36-B7AE-4D28F51E8564"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "postUser(user:token:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -866,6 +866,66 @@
                   endingLineNumber = "55"
                   offsetFromSymbolStart = "208">
                </Location>
+               <Location
+                  uuid = "A090D93C-CE51-4E36-B7AE-4D28F51E8564 - b2db680720851a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "2036">
+               </Location>
+               <Location
+                  uuid = "A090D93C-CE51-4E36-B7AE-4D28F51E8564 - decdc931a168024"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "A090D93C-CE51-4E36-B7AE-4D28F51E8564 - b2db680720851a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "2016">
+               </Location>
+               <Location
+                  uuid = "A090D93C-CE51-4E36-B7AE-4D28F51E8564 - b2db680720851a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "1868">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -873,14 +933,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9B42AC50-54BE-4AF6-ACE3-E0745F95CBA4"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "postUser(user:token:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -914,6 +974,21 @@
                   endingLineNumber = "56"
                   offsetFromSymbolStart = "1152">
                </Location>
+               <Location
+                  uuid = "9B42AC50-54BE-4AF6-ACE3-E0745F95CBA4 - decdc931a1683b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1224">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -943,8 +1018,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "getToken(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -959,9 +1034,9 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "getToken(completionHandler:)"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "fetchUsers(load:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1023,8 +1098,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "getToken(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1039,8 +1114,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "getToken(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -1080,22 +1155,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8D18FBF3-664F-4D6A-8494-AC99E46A6258"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestRequestOE/Controllers/PostApiController/ViewModel/PostApiViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "convertImage()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B7EA44E6-1EC9-44C9-B518-A32C81DBE4F1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -1103,8 +1162,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "postUser(user:token:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -1138,6 +1197,21 @@
                   endingLineNumber = "73"
                   offsetFromSymbolStart = "2168">
                </Location>
+               <Location
+                  uuid = "B7EA44E6-1EC9-44C9-B518-A32C81DBE4F1 - decdc931a1682ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "2168">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1151,8 +1225,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "postUser(user:token:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -1184,6 +1258,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "75"
                   endingLineNumber = "75"
+                  offsetFromSymbolStart = "2508">
+               </Location>
+               <Location
+                  uuid = "5916B42B-7114-425A-B5CF-660AAD74E16B - decdc931a16852d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestRequestOE.NetworkServiceImplementation.postUser(user: TestRequestOE.RegistrUser, token: Swift.String, completionHandler: (Swift.Result&lt;TestRequestOE.Postmodel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
                   offsetFromSymbolStart = "2508">
                </Location>
             </Locations>
@@ -1279,8 +1368,8 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "getPosition(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -1357,8 +1446,8 @@
             filePath = "TestRequestOE/Controllers/PostApiController/ViewModel/PostApiViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "registrUser()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1373,10 +1462,58 @@
             filePath = "TestRequestOE/Services/NetworkService/NetworkServiceImplementation.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "postUser(user:token:completionHandler:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9998C604-C3FA-48E9-926F-57926157C5E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchUsers()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9998C604-C3FA-48E9-926F-57926157C5E4 - fb9a5d5883130047"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; () in TestRequestOE.GetApiViewModel.fetchUsers() -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "9998C604-C3FA-48E9-926F-57926157C5E4 - e71ad89bad75007"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TestRequestOE.User, TestRequestOE.User) -&gt; Swift.Bool in closure #1 (Swift.Result&lt;TestRequestOE.ResponseUser, Swift.Error&gt;) -&gt; () in TestRequestOE.GetApiViewModel.fetchUsers() -&gt; ()"
+                  moduleName = "TestRequestOE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/TestRequestOE/TestRequestOE/Controllers/GetApiController/ViewModel/GetApiViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

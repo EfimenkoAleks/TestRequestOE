@@ -33,6 +33,7 @@ final class PostApiViewModel: ObservableObject {
     var positions: [Position] = []
     private var fetcher: DataFetcherInterface
     private var cancellables = Set<AnyCancellable>()
+    var typeHandler: Block<()>?
     
     // MARK: - Init
     
@@ -161,7 +162,7 @@ final class PostApiViewModel: ObservableObject {
     
     func convertImage() {
         guard let image = selectedImage else { return }
-        let imageData: Data? = image.jpegData(compressionQuality: 0.4)
+        let imageData: Data? = image.jpegData(compressionQuality: 0.5)
         let imageStr = imageData?.base64EncodedString(options: .lineLength64Characters) ?? ""
         strImage = imageStr
         validateUser()
@@ -177,16 +178,21 @@ final class PostApiViewModel: ObservableObject {
         ifValidPhone() else { return }
         
         if testInternet() {
-            updateField()
             let positin = positions.first(where: {$0.name == isSelectedPositionStr})
             let user = RegistrUser(name: username, email: userEmail, phone: userPhone, position_id: positin?.idPosition ?? 1, photo: image)
             fetcher.postUser(user) { [weak self] result in
                 guard let self = self else { return }
+                
+                self.updateField()
+                
                 if result.success == true {
                     self.coordinator?.eventOccurred(with: .successfulRegistration)
                 }
                 if result.message == NetworkErrors.emailAlreadyExist.error {
                     self.coordinator?.eventOccurred(with: .emailAlreadyExists)
+                }
+                if result.message == NetworkErrors.invalidToken.error {
+            //        self.typeHandler?(())
                 }
             }
         }
