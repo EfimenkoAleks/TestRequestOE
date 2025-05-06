@@ -34,7 +34,7 @@ struct EmailRegistredView: View {
                         .font(.system(size: 20))
                         .foregroundStyle(T_Color.textColor.color)
                     Button {
-                        registredVM.back()
+                        registredVM.tryAgain()
                     } label: {
                         Text(registredVM.nameButton)
                             .font(.system(size: 18, weight: .medium))

@@ -19,6 +19,7 @@ final class NetworkServiceImplementation {
     private let baseUrl = "https://frontend-test-assignment-api.abz.agency/api/v1"
     let users = "/users"
     let token = "/token"
+    let position = "/positions"
     var page: Int = 1
     let count: Int = 5
     
@@ -29,14 +30,20 @@ final class NetworkServiceImplementation {
 
 extension NetworkServiceImplementation: NetworkService {
     
-    func postUser(user: RegistrUser) {
-        let token = ""
+    func postUser(user: RegistrUser, token: String, completionHandler: @escaping (Result<Postmodel, Error>) -> Void) {
+        
+        let completionBlock: (Result<Postmodel, Error>) -> Void = { result in
+            DispatchQueue.main.async {
+                completionHandler(result)
+            }
+        }
+        
         // 1. Prepare URL and request
         guard let url = URL(string: baseUrl + users) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+       // request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
 
         // 2. Prepare the body
      //   let user = User(name: "John Doe", email: "john@example.com")
@@ -54,13 +61,20 @@ extension NetworkServiceImplementation: NetworkService {
                 print("✅ Status Code: \(httpResponse.statusCode)")
             }
 
-            if let data = data {
+            guard let data = data else { return }
                 if let responseBody = try? JSONSerialization.jsonObject(with: data) {
                     print("📦 Response Body:", responseBody)
                 } else {
                     print("⚠️ Could not parse response body")
                 }
+            
+            do {
+                let model = try JSONDecoder().decode(Postmodel.self, from: data)
+                completionBlock(.success(model))
+            } catch {
+                completionBlock(.failure(error))
             }
+            
         }.resume()
     }
     
@@ -167,7 +181,7 @@ extension NetworkServiceImplementation: NetworkService {
     
     func getPosition(completionHandler: @escaping (Result<[OwnPosition], Error>) -> Void) {
         
-        var urlStr = baseUrl + token
+        var urlStr = baseUrl + position
         
         let completionBlock: (Result<[OwnPosition], Error>) -> Void = { result in
             DispatchQueue.main.async {

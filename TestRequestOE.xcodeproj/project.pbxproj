@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE008ECE2DC91C7C00E2C732 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE008ECD2DC91C7C00E2C732 /* KeyboardResponder.swift */; };
+		CE008ED02DC9345B00E2C732 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE008ECF2DC9345B00E2C732 /* DataFetcher.swift */; };
+		CE008ED22DC9EA7500E2C732 /* Postmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE008ED12DC9EA7500E2C732 /* Postmodel.swift */; };
+		CE008ED42DC9EB1700E2C732 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE008ED32DC9EB1700E2C732 /* NetworkErrors.swift */; };
 		CE9768102DC4BCD50035E65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE97680F2DC4BCD50035E65E /* AppDelegate.swift */; };
 		CE9768192DC4BCD80035E65E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9768182DC4BCD80035E65E /* Assets.xcassets */; };
 		CE97681C2DC4BCD80035E65E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE97681A2DC4BCD80035E65E /* LaunchScreen.storyboard */; };
@@ -56,6 +60,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE008ECD2DC91C7C00E2C732 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		CE008ECF2DC9345B00E2C732 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		CE008ED12DC9EA7500E2C732 /* Postmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postmodel.swift; sourceTree = "<group>"; };
+		CE008ED32DC9EB1700E2C732 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		CE97680C2DC4BCD50035E65E /* TestRequestOE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRequestOE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE97680F2DC4BCD50035E65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9768182DC4BCD80035E65E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -242,6 +250,7 @@
 			children = (
 				CE97683B2DC4E9F30035E65E /* Colors.swift */,
 				CE97686B2DC809310035E65E /* ImagePicker.swift */,
+				CE008ECD2DC91C7C00E2C732 /* KeyboardResponder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 				CE9768502DC62F020035E65E /* ImageService */,
 				CE9768492DC50A310035E65E /* NetworkService */,
 				CE9768472DC509F80035E65E /* DIContainer.swift */,
+				CE008ECF2DC9345B00E2C732 /* DataFetcher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,6 +281,8 @@
 				CE97684A2DC50A570035E65E /* NetworkService.swift */,
 				CE97684C2DC50A790035E65E /* NetworkServiceImplementation.swift */,
 				CE97686D2DC835810035E65E /* TokenModel.swift */,
+				CE008ED12DC9EA7500E2C732 /* Postmodel.swift */,
+				CE008ED32DC9EB1700E2C732 /* NetworkErrors.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -498,9 +510,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9768482DC509F80035E65E /* DIContainer.swift in Sources */,
+				CE008ED02DC9345B00E2C732 /* DataFetcher.swift in Sources */,
 				CE9768392DC4E8850035E65E /* GetApiView.swift in Sources */,
 				CE9768792DC8A8700035E65E /* NoInternetView.swift in Sources */,
 				CE97686A2DC7F0290035E65E /* UploadButtonViewWithLable.swift in Sources */,
+				CE008ED42DC9EB1700E2C732 /* NetworkErrors.swift in Sources */,
 				CE97683C2DC4E9F30035E65E /* Colors.swift in Sources */,
 				CE9768702DC8374D0035E65E /* PositionModel.swift in Sources */,
 				CE9768662DC7EFCF0035E65E /* PositionView.swift in Sources */,
@@ -520,6 +534,7 @@
 				CE9768562DC72D540035E65E /* T_TabbarItem.swift in Sources */,
 				CE9768872DC8B88D0035E65E /* PostAssembly.swift in Sources */,
 				CE9768522DC62F280035E65E /* ImageService.swift in Sources */,
+				CE008ECE2DC91C7C00E2C732 /* KeyboardResponder.swift in Sources */,
 				CE9768732DC845400035E65E /* SuccessfullyRegisteredView.swift in Sources */,
 				CE9768682DC7EFFE0035E65E /* CustomTextFieldWithLable.swift in Sources */,
 				CE97686C2DC809310035E65E /* ImagePicker.swift in Sources */,
@@ -533,6 +548,7 @@
 				CE97688E2DC8CCDD0035E65E /* SuccessfullyRegisteredViewModel.swift in Sources */,
 				CE9768902DC8CD890035E65E /* SuccessfullyRegisteredAssembly.swift in Sources */,
 				CE97687C2DC8AA270035E65E /* Connectivity.swift in Sources */,
+				CE008ED22DC9EA7500E2C732 /* Postmodel.swift in Sources */,
 				CE97685C2DC799B30035E65E /* PostApiView.swift in Sources */,
 				CE9768642DC7EFAC0035E65E /* SignInButtonView.swift in Sources */,
 				CE9768622DC7ED560035E65E /* RegistrUser.swift in Sources */,

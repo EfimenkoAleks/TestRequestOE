@@ -20,4 +20,8 @@ final class EmailRegistredViewModel: ObservableObject {
     func back() {
         typeHandler?(())
     }
+    
+    func tryAgain() {
+        typeHandler?(())
+    }
 }

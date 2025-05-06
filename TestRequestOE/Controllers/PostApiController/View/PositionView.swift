@@ -27,7 +27,7 @@ struct PositionView: View {
                 .foregroundStyle(T_Color.white.color)
                 .overlay(
                     RoundedRectangle(cornerRadius: 7)
-                        .stroke(position == isSelectedPosition ? T_Color.blueColor.color : T_Color.grayLineColor.color , lineWidth: isSelected == true ? 5 : 1)
+                        .stroke(position == isSelectedPosition ? T_Color.blueColor.color : T_Color.grayLineColor.color , lineWidth: position == isSelectedPosition ? 5 : 1)
                 )
                 .onTapGesture {
                     isSelected = true

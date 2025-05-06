@@ -11,10 +11,11 @@ struct UploadButtonViewWithLable: View {
     
     var messageText: String
     @Binding var isClick: Bool
+    @Binding var isCorect: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
-            UploadButtonView(namedField: "Upload your photo", namedButton: "Upload", isClick: $isClick)
+            UploadButtonView(isCorect: $isCorect, namedField: "Upload your photo", namedButton: "Upload", isClick: $isClick)
             Text(messageText)
                 .foregroundStyle(T_Color.redColor.color)
                 .font(.system(size: 14))
@@ -26,6 +27,7 @@ struct UploadButtonViewWithLable: View {
 
 struct UploadButtonView: View {
     
+    @Binding var isCorect: Bool
     var namedField: String
     var namedButton: String
     @Binding var isClick: Bool
@@ -40,7 +42,7 @@ struct UploadButtonView: View {
                 HStack {
                     Text(namedField)
                         .font(.system(size: 16, weight: .regular))
-                        .foregroundStyle(T_Color.secondaryTextColor.color)
+                        .foregroundStyle(isCorect == true ? T_Color.redColor.color : T_Color.grayLineColor.color)
                     Spacer()
                     Text(namedButton)
                         .font(.system(size: 16, weight: .medium))
@@ -54,7 +56,7 @@ struct UploadButtonView: View {
         .clipShape(RoundedRectangle(cornerRadius: 4))
         .overlay(
             RoundedRectangle(cornerRadius: 4)
-                .stroke(T_Color.grayLineColor.color , lineWidth: 1)
+                .stroke(isCorect == true ? T_Color.redColor.color : T_Color.grayLineColor.color , lineWidth: 1)
         )
     }
 }

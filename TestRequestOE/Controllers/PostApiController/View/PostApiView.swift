@@ -19,8 +19,6 @@ struct PostApiView: View {
     @State var isClickGalery: Bool = false
     @State var isClickCamera: Bool = false
     @State var isSelectedPosition: Bool = false
- //   @State var isSelectedPositionStr: String = ""
- //   @State private var selectedImage: UIImage?
     @State private var isPickerPresented = false
     @State var resorce: UIImagePickerController.SourceType = .photoLibrary
     
@@ -35,9 +33,9 @@ struct PostApiView: View {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 40) {
                     
-                    CustomTextFieldWithLable(messageText: postVM.messageName, namedField: postVM.name, iswrite: $iswriteName, name: $postVM.username)
-                    CustomTextFieldWithLable(messageText: postVM.messageEmail, namedField: postVM.email, iswrite: $iswriteEmail, name: $postVM.userEmail)
-                    CustomTextFieldWithLable(messageText: postVM.messagePhone, namedField: postVM.phone, iswrite: $iswritePhone, name: $postVM.userPhone)
+                    CustomTextFieldWithLable(messageText: postVM.messageName, namedField: postVM.name, isCorect: $postVM.isCorrectField, iswrite: $iswriteName, name: $postVM.username)
+                    CustomTextFieldWithLable(messageText: postVM.messageEmail, namedField: postVM.email, isCorect: $postVM.isCorrectField, iswrite: $iswriteEmail, name: $postVM.userEmail)
+                    CustomTextFieldWithLable(messageText: postVM.messagePhone, namedField: postVM.phone, isCorect: $postVM.isCorrectField, iswrite: $iswritePhone, name: $postVM.userPhone)
                      
                     Text("Select your position")
                         .font(.system(size: 18))
@@ -47,16 +45,20 @@ struct PostApiView: View {
                             PositionView(position: position.name, isSelectedPosition: $postVM.isSelectedPositionStr)
                         }
                     }
-                    UploadButtonViewWithLable(messageText: postVM.messagePhoto, isClick: $isPickerPresented)
-                    SignInButtonView(isCompleted: $isCompleted) { _ in
+                    UploadButtonViewWithLable(messageText: postVM.messagePhoto, isClick: $isPickerPresented, isCorect: $postVM.isCorrectField)
+                    SignInButtonView(isCompleted: $postVM.isCompletedUser) { _ in
                         postVM.registrUser()
                     }
 
                     }
                     .padding()
+                    .keyboardResponsive()
                 
             }
         }
+        .onTapGesture {
+                    UIApplication.shared.endEditing()
+                }
         .confirmationDialog("Choose how you want to add a photo", isPresented: $isPickerPresented) {
             Button() {
                 resorce = .camera

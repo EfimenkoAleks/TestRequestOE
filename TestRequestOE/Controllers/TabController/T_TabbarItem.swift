@@ -31,7 +31,8 @@ struct T_TabbarItem: View {
             }
         }
         .foregroundStyle(selected == tabItem.tab.name ? T_Color.blueColor.color : T_Color.black.color)
-        .padding(.vertical, 5)
+        .frame(height: 40)
+        .padding(.top, 10)
         .padding(.horizontal, 10)
         .clipShape(Capsule())
     }
