@@ -6,4 +6,4 @@ If there is no Internet, the corresponding screen will be displayed. Check your 
 
 To build the application, you need to use the standard build script.
 
-The project uses the MVVM + coordinator architecture with a DI container and managers
+The project uses the MVVM + coordinator architecture with a DI container and managers, UI is written in SwiftUI
